@@ -1,71 +1,102 @@
 html, 
 body {
    height: 100%;
+    font-size: 16px;
+    font-family: 'Cubano-Regular';
 }
 
 body {
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
-   color: #6c6f73;
-   font-size: 16px;
 }
 
-h1,h2,h3,h4,h5 {
-   color: #333;
-}
-
-h6 {
-   text-transform: uppercase;
-   font-weight: bold;
-   font-size: 0.8rem;
-   letter-spacing: 0.1rem;
-}
-
-.blockquote {
-   font-size: 1.6rem;
-   color: #333;
-   border: none;
-   padding: 0;
-}
-
-.blockquote-footer {
-   margin: 1rem 0 0;
-}
+/* Cover section */
 
 #cover-section {
-   background: url('../img/cover-image.jpeg') center center;
+   background: url('../img/cover-background.jpg');
    background-size: cover;
    color: #fff;
    height: 100%;
    width: 100%;
    display: flex;       
-   align-items: center;
+   align-items: flex-end;
 }
 
 #cover-caption {
-   font-size: 1.4rem;
+   
    font-weight: 200;
    margin: 0 auto;
-   background-color: rgba(0, 0, 0, 0.8);
-   border-radius: 80px;
+   border-radius: 1.375rem;
    padding: 5rem;
    text-align: center;
+   color: #fff;
+   font-weight: 700;
 }
 
 #cover-caption h1 {
-   color: #fff;
-   font-weight: bold;
    text-transform: uppercase;
+   font-weight: 700;
+   
+}
+
+#cover-caption p {
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
+
+#cover-caption span {
+   color: #144028;
 }
 
 #cover-caption a {
    margin-top: 1rem;
    font-size: 2rem;
-   color: #428bca;
-   transition: 0.8s;
+   color: rgba(19, 128, 36, 0.9);
+   transition: 0.85s;
 }
 
 #cover-caption a:hover {
    color: white;
+   font-size: 2.5rem;
    transition: 0.8s;
+}
+
+/* Main navigation*/
+.navbar-brand {
+   font-family: 'Cubano-Regular';
+   padding-right: 0.9375rem;
+}
+
+#nav-main {
+   font-family: 'Nunito-Regular';
+   height: 3.75rem;
+}
+
+#nav-main li a {
+   border-bottom: 1px solid transparent;
+   font-size: 1rem;
+   transition: 0.5s;
+}
+
+#nav-main li a:hover {
+   border-bottom: 2px solid rgba(19, 128, 36, 1);
+   font-size: 1.05rem;
+   transition: 0.9s;
+}
+/* Text styles*/
+
+.bold-green {
+   font-weight: 700;
+   color: rgba(19, 128, 36, 0.9);
+}
+
+/* FONT FACES */
+@font-face {
+    font-family: 'Cubano-Regular';
+    src: local('../fonts/Cubano-Regular.otf'), url('../fonts/Cubano-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: local('../fonts/Nunito-Regular.ttf'), url('../fonts/Nunito-Regular.ttf') format('truetype');
 }
