@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 html,
+=======
+html, 
+>>>>>>> Adding conver-section + nav
 body {
    height: 100%;
     font-size: 16px;
@@ -10,6 +14,7 @@ body {
    text-rendering: optimizeLegibility;
 }
 
+<<<<<<< HEAD
 section {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -20,6 +25,8 @@ section {
     background: #F3F3F3;
 }
 
+=======
+>>>>>>> Adding conver-section + nav
 /* Main navigation*/
 #nav-main {
    align-self: flex-start;
@@ -89,6 +96,10 @@ section {
 #cover-caption h1 {
    text-transform: uppercase;
    font-weight: 700;
+<<<<<<< HEAD
+=======
+   
+>>>>>>> Adding conver-section + nav
 }
 
 #cover-caption p {
@@ -110,6 +121,7 @@ section {
    transition: 0.8s;
 }
 
+<<<<<<< HEAD
 /* Features-section */
 
  /* About-section */
@@ -150,6 +162,7 @@ h2 {
     padding-bottom: 1.25rem;
 }
 
+/* Text styles*/
 .bold-green {
    font-weight: 700;
    color: rgba(19, 128, 36, 0.9);
@@ -176,6 +189,7 @@ h2 {
 }
 
 
+
 @media (max-width: 1199px) {
 
 }
@@ -195,3 +209,6 @@ h2 {
     display: block;
     }
 }
+
+
+
