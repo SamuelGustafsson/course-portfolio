@@ -142,6 +142,19 @@ section {
   border: 2px solid black;
 }
 
+#testimonials .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-button-parent {
+    align-self: center;
+}
+
+#testimonials a:hover {
+    cursor: pointer;
+    color: deeppink;
+}
 
 /* Text styles*/
 
@@ -190,6 +203,12 @@ h2 {
 
 @media (max-width: 580px) {
 #about img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    }
+
+    #testimonials img {
     float: none;
     margin: 0 auto;
     display: block;
