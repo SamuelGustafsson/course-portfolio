@@ -1,4 +1,4 @@
-html, 
+html,
 body {
    height: 100%;
     font-size: 16px;
@@ -8,6 +8,16 @@ body {
 body {
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
+}
+
+section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+}
+
+.odd-section-color {
+    background: #F3F3F3;
 }
 
 /* Main navigation*/
@@ -79,7 +89,6 @@ body {
 #cover-caption h1 {
    text-transform: uppercase;
    font-weight: 700;
-   
 }
 
 #cover-caption p {
@@ -101,8 +110,44 @@ body {
    transition: 0.8s;
 }
 
+/* Features-section */
+
+ /* About-section */
+
+#about img {
+  float: right;
+  width: 160px;
+  border-radius: 50%;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+/*Work Section*/
+#work img {
+    width: 100%;
+}
+
+#work .card-block {
+    padding-bottom: 0;
+}
+
+ /* Testimonials-section */
+
+#testimonials img {
+  float: right;
+  width: 160px;
+  border-radius: 50%;
+  background-size: cover;
+  border: 2px solid black;
+}
+
 
 /* Text styles*/
+
+h2 {
+    text-align: center;
+    padding-bottom: 1.25rem;
+}
 
 .bold-green {
    font-weight: 700;
@@ -124,3 +169,4 @@ body {
     font-family: 'Nunito-Regular';
     src: local('../fonts/Nunito-Regular.ttf'), url('../fonts/Nunito-Regular.ttf') format('truetype');
 }
+
