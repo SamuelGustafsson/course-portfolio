@@ -120,6 +120,7 @@ section {
   border-radius: 50%;
   background-size: cover;
   border: 2px solid black;
+ box-sizing: border-box;
 }
 
 /*Work Section*/
@@ -159,6 +160,10 @@ h2 {
     border-bottom: 4px solid rgba(19, 128, 36, 1);
 }
 
+.fa-3 {
+    font-size: 3rem;
+}
+
 /* FONT FACES */
 @font-face {
     font-family: 'Cubano-Regular';
@@ -170,3 +175,23 @@ h2 {
     src: local('../fonts/Nunito-Regular.ttf'), url('../fonts/Nunito-Regular.ttf') format('truetype');
 }
 
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 580px) {
+#about img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    }
+}
