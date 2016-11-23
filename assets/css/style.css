@@ -28,7 +28,7 @@ section {
    align-items: center;
    justify-content: center;
    background: transparent;
-   padding: 1.5rem 15%;
+   padding: 0 15%;
 }
 
 .nav-icon {
@@ -71,19 +71,19 @@ section {
    color: #fff;
    height: 100%;
    width: 100%;
-   display: flex;
-   align-items: flex-end;
+   
 }
 
 #cover-caption {
    font-weight: 200;
-   margin: 0 auto;
+   margin: 25rem 0 auto;
    border-radius: 1.375rem;
    padding: 5rem;
    text-align: center;
    color: #fff;
    font-weight: 700;
    width: 100%;
+   align-self: flex-end;
 }
 
 #cover-caption h1 {
