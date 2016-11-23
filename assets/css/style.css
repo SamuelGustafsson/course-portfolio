@@ -247,6 +247,17 @@ h2 {
     border-bottom: 4px solid rgba(19, 128, 36, 1);
 }
 
+/* Animations */
+.js-wp-1 {
+    opacity: 0;
+}
+
+.js-wp-1.animated {
+    opacity: 1;
+}
+
+
+
 
 /* FONT FACES */
 @font-face {
