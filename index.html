@@ -47,7 +47,7 @@
                   <h1 class="display-4">Samuel Gustafsson</h1>
                   <p>Fullstack <span class="green-underline">Javascript<span class="bold-green">developer</span></span>
                         student</p>
-                  <a href="" class="btn btn-lg"><i class="fa fa-arrow-down"></i></a>
+                  <a href="#about" class="btn btn-lg"><i class="fa fa-arrow-down"></i></a>
             </div>
       </section>
 
@@ -166,7 +166,7 @@
                         <h2>Testimonials</h2>
                         <div class="row">
                               <div class="col-sm-1 slider-button-parent">
-                                    <a><i class="fa fa-chevron-left fa-3" aria-hidden="true"></i></a>
+                                    <a><i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i></a>
                               </div>
 
                               <!--Slider items-->
@@ -181,11 +181,55 @@
                               </div>
 
                               <div class="col-sm-1 slider-button-parent">
-                                    <a><i class="fa fa-chevron-right fa-3" aria-hidden="true"></i></a>
+                                    <a><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></a>
                               </div>
                         </div>
       </section>
 
+      <section id="contact">
+            <div class="container">
+                  <h2>Contact</h2>
+                  <form action="post" class="col-sm-8 offset-sm-2">
+                        <!--Get fullname from user-->
+                        <div class="form-group col-sm-6 col-xs-12">
+                              <label for="contact-fullname" class="sr-only">Fullname:</label>
+                              <input type="fullname" id="contact-fullname" class="form-control" placeholder="Fullname">
+                        </div>
+                        <!--Get email from user-->
+                        <div class="form-group col-sm-6 col-xs-12">
+                              <label for="contact-email" class="sr-only">Email:</label>
+                              <input type="email" id="contact-email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group col-xs-12">
+                              <label for="contact-message" class="sr-only">Message</label>
+                              <textarea class="form-control" id="contact-message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group col-xs-1 offset-sm-10">
+                              <button type="submit" class="">Submit</button>
+                        </div>
+                  </form>
+            </div>
+      </section>
+
+      <footer>
+            <div class="container">
+                  <div class="row">
+                        <div class="col-sm-4">
+                              <p>Copyright &copy; Samuel Gustafsson</p>
+                        </div>
+                        <div class="col-sm-4">
+                              <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                              </ul>
+                        </div>
+                        <div class="col-sm-4 scroll-to-top-button">
+                              <a href="#cover-section"><i class="fa fa-3x fa-chevron-circle-up"></i></a>
+                        </div>
+                  </div>
+            </div>
+      </footer>
       <!-- CDN jQuery -->
       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
