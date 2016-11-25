@@ -43,6 +43,10 @@ section {
    transition: 0.5s;
 }
 
+#nav-main ul {
+    display: inline-block
+}
+
 .nav-icon i {
    background: rgba(126, 160, 158, 0.4);;
    border-radius: 50%;
@@ -134,9 +138,14 @@ section {
 
  /* Testimonials Section */
 
+ #testimonials {
+     height: auto;
+ }
+
 #testimonials img {
   float: right;
   width: 160px;
+  height: 160px;
   border-radius: 50%;
   background-size: cover;
   border: 2px solid black;
@@ -151,9 +160,32 @@ section {
     align-self: center;
 }
 
-#testimonials a:hover {
+.slider-button-parent a:hover {
     cursor: pointer;
     color: deeppink;
+}
+
+.slider-container {
+    height: 100%;
+}
+
+
+#testimonials-slider-nav {
+    text-align: center;
+}
+
+.testimonial-slider-item:hover {
+    opacity: 0;
+    transition: 5s;
+}
+
+.fadeOut{
+    width: 0px;
+    transition: 2s;
+}
+
+.current {
+    border:2px solid red;
 }
 
 /* Footer Section*/
@@ -280,7 +312,12 @@ h2 {
 }
 
 @media (max-width: 767px) {
-
+#testimonials img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 580px) {
