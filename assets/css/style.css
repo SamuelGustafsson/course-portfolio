@@ -179,11 +179,6 @@ section {
     transition: 5s;
 }
 
-.fadeOut{
-    width: 0px;
-    transition: 2s;
-}
-
 .current {
     border:2px solid red;
 }
