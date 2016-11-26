@@ -1,5 +1,6 @@
 "use strict";
-var sliderTime = 5000;
+var sliderTime = 2000;
+var SliderTimerControl = 0;
 $(document).ready(function () {
 
       //  Page navigation buttons
@@ -75,35 +76,34 @@ var sliderNavButtons = sliderNavControlsContainer.getElementsByTagName("a");
 var sliderButtons = document.getElementsByClassName("testmionial-slider-button");
 var counter = 0;
 
-function playSlider() {
-      console.log(counter + " from playSlider");
-      for (var i = 0; i < sliderItems.length; i++) {
-            $(sliderItems[i]).hide();
-            $(sliderNavButtons[i]).removeClass("current");
-      }
 
-      if (counter > sliderItems.length-1) {
-            counter = 0;
-      }
-
-      $(sliderItems[counter]).fadeIn("slow");
-      $(sliderNavButtons[counter]).addClass("current");
-      counter++;
+function resetSliderTimer() {
+      clearTimeout(SliderTimerControl);
+      SliderTimerControl = setTimeout(playSlider, sliderTime);
 }
 
 function changeTestimonial(buttonClicked) {
-      // Set current from click event
-      counter += buttonClicked;
+
+      if (buttonClicked === "left") {
+            counter--;
+      }
+      else if (buttonClicked === "right") {
+            counter++;
+      }
+
       console.log(counter + " from changeTestimonial");
 
-      if (counter >= sliderItems.length) {
+      // If counter is smaller than sliderItems.length -1 set 0
+      if (counter > sliderItems.length - 1) {
             counter = 0;
       }
+
+      // If counter is smaller than 0 set counter to sliderItems.length - 1
       else if (counter < 0) {
-            counter = sliderItems.length-1;
+            counter = sliderItems.length - 1;
       }
 
-       for (var i = 0; i < sliderItems.length; i++) {
+      for (var i = 0; i < sliderItems.length; i++) {
             // If testimonial is not the one ask for, hide it
             if (i != counter) {
                   $(sliderItems[i]).hide();
@@ -115,26 +115,35 @@ function changeTestimonial(buttonClicked) {
       $(sliderItems[counter]).fadeIn();
       // Update nav control
       $(sliderNavButtons[counter]).addClass("current");
-      counter++;
       // Reset interval
-      clearInterval(setInterval(playSlider, sliderTime));
+      resetSliderTimer();
 }
+
+function playSlider() {
+
+      changeTestimonial("right");
+      resetSliderTimer();
+}
+
+
 
 // Chane testimonial with arrow buttons 
 $(".testmionial-slider-left").on("click", function () {
-      var next = -1;
-      changeTestimonial(next);
+      changeTestimonial("left");
       console.log("left");
       return false;
 });
 
 $(".testmionial-slider-right").on("click", function () {
-      var next = 1;
-      changeTestimonial(next);
+
+      changeTestimonial("right");
       return false;
 });
 
+
+
 renderTestimonials(testimonialsARR);
-setInterval(playSlider, sliderTime);
 playSlider();
+SliderTimerControl = setTimeout(playSlider, sliderTime);
+
 
