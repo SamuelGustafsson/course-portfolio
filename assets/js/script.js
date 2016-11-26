@@ -76,12 +76,13 @@ var sliderButtons = document.getElementsByClassName("testmionial-slider-button")
 var counter = 0;
 
 function playSlider() {
-      for (var i in sliderItems) {
+      console.log(counter + " from playSlider");
+      for (var i = 0; i < sliderItems.length; i++) {
             $(sliderItems[i]).hide();
             $(sliderNavButtons[i]).removeClass("current");
       }
 
-      if (counter === sliderItems.length) {
+      if (counter > sliderItems.length-1) {
             counter = 0;
       }
 
@@ -93,44 +94,47 @@ function playSlider() {
 function changeTestimonial(buttonClicked) {
       // Set current from click event
       counter += buttonClicked;
-      if (counter == 0) {
-            counter = sliderItems.length;
-      }
-      else if (counter === sliderItems.length) {
+      console.log(counter + " from changeTestimonial");
+
+      if (counter >= sliderItems.length) {
             counter = 0;
       }
+      else if (counter < 0) {
+            counter = sliderItems.length-1;
+      }
 
-      for (var i in sliderItems) {
+       for (var i = 0; i < sliderItems.length; i++) {
             // If testimonial is not the one ask for, hide it
             if (i != counter) {
-                  $(sliderItems[i]).fadeOut();
+                  $(sliderItems[i]).hide();
                   // Change nav control
-                  $(sliderButtons[i]).removeClass("current");
+                  $(sliderNavButtons[i]).removeClass("current");
             }
       }
       // Show testimonial
       $(sliderItems[counter]).fadeIn();
       // Update nav control
-      $(sliderButtons[counter]).addClass("current");
+      $(sliderNavButtons[counter]).addClass("current");
       counter++;
       // Reset interval
       clearInterval(setInterval(playSlider, sliderTime));
 }
 
 // Chane testimonial with arrow buttons 
-$(".testmionial-slider-right").on("click", function () {
-      var next = 1;
-      changeTestimonial(next);
-      return false;
-});
-
 $(".testmionial-slider-left").on("click", function () {
       var next = -1;
       changeTestimonial(next);
       console.log("left");
       return false;
 });
+
+$(".testmionial-slider-right").on("click", function () {
+      var next = 1;
+      changeTestimonial(next);
+      return false;
+});
+
 renderTestimonials(testimonialsARR);
-playSlider();
 setInterval(playSlider, sliderTime);
+playSlider();
 
