@@ -1,21 +1,22 @@
 "use strict";
-var sliderTime = 2000;
+var sliderTime = 5000;
 var SliderTimerControl = 0;
 $(document).ready(function () {
 
+      $("#cover-caption h1").fitText(1, { minFontSize: '20px', maxFontSize: '55px' });
+
       //  Page navigation buttons
-      // $("a[href^='#']").on('click', function () {
+      $("a[href^='#']").on('click', function (e) {
+            var hash = this.hash;
 
-      //       var hash = this.hash;
+            $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+            }, 1000, function () {
 
-      //       $('html, body').animate({
-      //             scrollTop: $(hash).offset().top
-      //       }, 1000, function () {
-
-      //             window.location.hash = hash;
-      //       });
-      //       return false;
-      // });
+                  window.location.hash = hash;
+            });
+            // return false;
+      });
 
       $('.js-wp-1').waypoint(function (direction) {
             $('.js-wp-1').addClass('animated fadeInDown');
@@ -35,10 +36,11 @@ function Testimonial(firstname, lastname, testimonial, pictureURL) {
       this.pictureURL = pictureURL;
 }
 
+
 // Create new testimonials
-var olofTest = new Testimonial('Olof', 'Larsson', "Samuel är så jävla skicklig", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/393268_302560479756766_1174175814_n.jpg?oh=d72b86716234548938641377804daac1&oe=58BDFACA");
-var niclasTest = new Testimonial('Niclas', 'Sjöstedt', "Jag har aldrig träffat en kille som är så jävla skicklig på squash", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14095885_10155384602429852_7106269000411252661_n.jpg?oh=766a77567c1c716bd800eb3dd7a5b656&oe=58C5B208");
-var emelieTest = new Testimonial('Emelie', 'Jacobsson', "Människa med större hjärta kan man inte hitta", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14702283_10154032622206705_3344385999197099248_n.jpg?oh=9b634b246a43c550bf0e71e130cba24c&oe=58B38EE0");
+var olofTest = new Testimonial('Olof', 'Larsson', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/393268_302560479756766_1174175814_n.jpg?oh=d72b86716234548938641377804daac1&oe=58BDFACA");
+var niclasTest = new Testimonial('Niclas', 'Sjöstedt', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.","https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14095885_10155384602429852_7106269000411252661_n.jpg?oh=766a77567c1c716bd800eb3dd7a5b656&oe=58C5B208");
+var emelieTest = new Testimonial('Emelie', 'Jacobsson', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14702283_10154032622206705_3344385999197099248_n.jpg?oh=9b634b246a43c550bf0e71e130cba24c&oe=58B38EE0");
 
 // Creating array to hold testimonials
 var testimonialsARR = [];
@@ -55,8 +57,8 @@ function renderTestimonials(testimonialsArray) {
             testimonialHTML += '<div class="col-md-3 col-xs-12 offset-sm-1">';
             testimonialHTML += '<img src="' + testimonialsArray[i].pictureURL + '" alt="Picture of ' + testimonialsArray[i].fullname + '">';
             testimonialHTML += '</div>';
-            testimonialHTML += '<div class="col-sm-8 col-xs-12">';
-            testimonialHTML += '<p>' + testimonialsArray[i].testimonial + '</p>';
+            testimonialHTML += '<div class="col-md-8 col-xs-12">';
+            testimonialHTML += '<p class="testimonial-message">' + testimonialsArray[i].testimonial + '</p>';
             testimonialHTML += '</div>';
             testimonialHTML += '</div>';
 
@@ -91,8 +93,6 @@ function changeTestimonial(buttonClicked) {
             counter++;
       }
 
-      console.log(counter + " from changeTestimonial");
-
       // If counter is smaller than sliderItems.length -1 set 0
       if (counter > sliderItems.length - 1) {
             counter = 0;
@@ -120,27 +120,24 @@ function changeTestimonial(buttonClicked) {
 }
 
 function playSlider() {
-
       changeTestimonial("right");
       resetSliderTimer();
 }
 
 
 
-// Chane testimonial with arrow buttons 
+// Change to next testimonial
 $(".testmionial-slider-left").on("click", function () {
       changeTestimonial("left");
-      console.log("left");
       return false;
 });
 
+// Change to previous testimonial
 $(".testmionial-slider-right").on("click", function () {
 
       changeTestimonial("right");
       return false;
 });
-
-
 
 renderTestimonials(testimonialsARR);
 playSlider();

@@ -22,17 +22,18 @@ section {
 
 /* Main navigation*/
 #nav-main {
-   align-self: flex-start;
-   font-family: 'Nunito-Regular';
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: transparent;
-   padding: 0 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito-Regular';
+    background: transparent;
+    padding: 0;
 }
 
 .nav-icon {
-   margin-right: 1rem;
+    display: inline-block;
+    margin: 0;
+    padding-right: 20px;
 }
 
 .nav-icon:hover {
@@ -44,7 +45,9 @@ section {
 }
 
 #nav-main ul {
-    display: inline-block
+    display: inline-block;
+    height: 27;
+    
 }
 
 .nav-icon i {
@@ -157,6 +160,7 @@ section {
 
 .slider-button-parent {
     align-self: center;
+    font-size: 2.5rem;
 }
 
 .slider-button-parent a:hover {
@@ -180,38 +184,46 @@ section {
     border:2px solid red;
 }
 
+.carousel-indicators {
+    background: deeppink;
+}
+
 /* Footer Section*/
 
 footer {
     background-color: #222;
-    padding-bottom: 10px;
-    position: relative;
-    text-align: center;
 }
 
-footer .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
 
-.social-links {
+footer .row {
+    display: flex;
+    align-items: stretch;
+}
+
+footer .row div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #888;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.social-links ul {
     list-style: none;
     float: right;
-    margin-top: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .social-links li {
     display: inline-block;
-    margin-right: 20px;
-    margin-top: 30px;
-    padding-right: 25px;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
 }
-
-.social-links li:last-child {
-    margin-right: 0;
-}
-
 
 .social-links li a:link,
 .social-links li a:visited {
@@ -222,28 +234,22 @@ footer .row {
     transition: 0.2s;
 }
 
-
 .social-links i:hover {
     color: deeppink;
 }
 
-.fa-facebook-square, 
+.scroll-to-top-button {
+text-align: center;
+}
+
+.fa-facebook-square,
 .fa-twitter-square,
 .fa-google-plus-square,
 .fa-instagram {
     transition: 0.2s;
 }
 
-
-footer p {
-    color: #888;
-    text-align: center;
-    margin-top: 45px;
-    font-size: 18px;
-}
-
 .fa-chevron-circle-up {
-    margin-top: 35px;
     color: rgb(14, 96, 27);
     transition: 0.2s;
 }
@@ -252,6 +258,8 @@ footer p {
     color: rgba(14, 96, 27, 0.92);
     transition: 0.2s;
 }
+
+
 
 
 /* Text styles*/
@@ -281,8 +289,6 @@ h2 {
 }
 
 
-
-
 /* FONT FACES */
 @font-face {
     font-family: 'Cubano-Regular';
@@ -295,15 +301,47 @@ h2 {
 }
 
 
+ /* Bootstrap 4: LG*/
 @media (max-width: 1199px) {
 
 }
 
+ /* Bootstrap 4: MD*/
 @media (max-width: 991px) {
+
+#nav-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito-Regular';
+    background: transparent;
+    padding: 0;
+}
+
+.nav-icon {
+    display: inline-block;
+    margin: 0;
+    padding-right: 20px;
+}
 
 }
 
+ /* Bootstrap 4: SM*/
 @media (max-width: 767px) {
+
+    html,
+body {
+    font-size: 16px;
+}
+
+
+    #about img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px !important;
+    }
+
 #testimonials img {
     float: none;
     margin: 0 auto;
@@ -312,7 +350,31 @@ h2 {
     }
 }
 
+ /* Bootstrap 4: XS*/
 @media (max-width: 580px) {
+
+html,
+body {
+    font-size: 12px;
+}
+
+#cover-caption {
+    padding: 0;
+    margin-top: 16rem;
+}
+
+#nav-main {
+    display: block;
+    text-align: center;
+    font-family: 'Nunito-Regular';
+    background: transparent;
+    padding: 0;
+}
+
+.nav-icon {
+    font-size: 2.1rem;
+}
+    
 #about img {
     float: none;
     margin: 0 auto;
@@ -323,5 +385,21 @@ h2 {
     float: none;
     margin: 0 auto;
     display: block;
+    }
+
+    .testimonial-message {
+        padding-top: 2rem;
+    }
+
+    .slider-button-parent {
+        font-size: 1rem;
+    }
+
+    .arrow-left {
+        padding-right: 0;
+    }
+
+    .arrow-right {
+        padding-left: 0;
     }
 }
