@@ -4,6 +4,7 @@ var SliderTimerControl = 0;
 $(document).ready(function () {
 
       $("#cover-caption h1").fitText(1, { minFontSize: '20px', maxFontSize: '55px' });
+      $("#cover-caption h1").fitText(1, { minFontSize: '20px', maxFontSize: '55px' });
 
       //  Page navigation buttons
       $("a[href^='#']").on('click', function (e) {
@@ -39,7 +40,7 @@ function Testimonial(firstname, lastname, testimonial, pictureURL) {
 
 // Create new testimonials
 var olofTest = new Testimonial('Olof', 'Larsson', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/393268_302560479756766_1174175814_n.jpg?oh=d72b86716234548938641377804daac1&oe=58BDFACA");
-var niclasTest = new Testimonial('Niclas', 'Sjöstedt', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.","https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14095885_10155384602429852_7106269000411252661_n.jpg?oh=766a77567c1c716bd800eb3dd7a5b656&oe=58C5B208");
+var niclasTest = new Testimonial('Niclas', 'Sjöstedt', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14095885_10155384602429852_7106269000411252661_n.jpg?oh=766a77567c1c716bd800eb3dd7a5b656&oe=58C5B208");
 var emelieTest = new Testimonial('Emelie', 'Jacobsson', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14702283_10154032622206705_3344385999197099248_n.jpg?oh=9b634b246a43c550bf0e71e130cba24c&oe=58B38EE0");
 
 // Creating array to hold testimonials
@@ -63,7 +64,7 @@ function renderTestimonials(testimonialsArray) {
             testimonialHTML += '</div>';
 
             // Create slider nav button
-            var sliderNavControl = '<a href="" class="current slider-nav-control" >' + testimonialNumber + '</a>';
+            var sliderNavControl = '<a href="" class="current slider-nav-control" ><i class="fa fa-circle-o" aria-hidden="true"></i></a>';
 
             // Render testimonial html string to index
             slider.insertAdjacentHTML('beforeend', testimonialHTML);
@@ -142,5 +143,7 @@ $(".testmionial-slider-right").on("click", function () {
 renderTestimonials(testimonialsARR);
 playSlider();
 SliderTimerControl = setTimeout(playSlider, sliderTime);
+
+
 
 
