@@ -1,5 +1,5 @@
 "use strict";
-var sliderTime = 20000;
+var sliderTime = 5000;
 var SliderTimerControl = 0;
 
 
@@ -39,6 +39,11 @@ $(document).ready(function () {
       // Change to next testimonial
       $(".testmionial-slider-left").on("click", function () {
             changeTestimonial("left");
+            return false;
+      });
+
+      $(".nav-link").on("click", function () {
+            $("#nav-main").removeClass("open");
             return false;
       });
 

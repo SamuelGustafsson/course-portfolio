@@ -189,6 +189,8 @@ section {
 
 #testimonials-slider-nav .slider-nav-control {
     padding-left: 0.8rem;
+    color: #0275d8;
+    text-decoration: none;
 }
 
 .testimonial-slider-item:hover {
@@ -196,15 +198,11 @@ section {
     transition: 5s;
 }
 
-.current,
-.slider-nav-control:hover {
+#testimonials-slider-nav .current,#testimonials-slider-nav .slider-nav-control:hover {
     color: rgb(19, 128, 36);
     font-size: 1.125rem;
     transition-timing-function: ease-in-out;
     transition: 0.4;
-}
-.slider-nav-control:visited {
-
 }
 
 .carousel-indicators {
@@ -216,7 +214,6 @@ section {
 footer {
     background-color: #222;
 }
-
 
 footer .row {
     display: flex;
@@ -282,9 +279,6 @@ text-align: center;
     transition: 0.2s;
 }
 
-
-
-
 /* Text styles*/
 
 h2 {
@@ -323,7 +317,6 @@ h2 {
     src: local('../fonts/Nunito-Regular.ttf'), url('../fonts/Nunito-Regular.ttf') format('truetype');
 }
 
-
  /* Bootstrap 4: LG*/
 @media (max-width: 1199px) {
 
@@ -332,30 +325,29 @@ h2 {
  /* Bootstrap 4: MD*/
 @media (max-width: 991px) {
 
-#nav-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nunito-Regular';
-    background: transparent;
-    padding: 0;
-}
+    #nav-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito-Regular';
+        background: transparent;
+        padding: 0;
+    }
 
-.nav-icon {
-    display: inline-block;
-    margin: 0;
-    padding-right: 20px;
-}
+    .nav-icon {
+        display: inline-block;
+        margin: 0;
+        padding-right: 20px;
+    }
 
 }
 
  /* Bootstrap 4: SM*/
 @media (max-width: 767px) {
 
-    html,
-body {
+    html, body {
     font-size: 16px;
-}
+    }
     #about img {
     float: none;
     margin: 0 auto;
@@ -364,10 +356,10 @@ body {
     }
 
 #testimonials img {
-    float: none;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
     }
 
     /*Hamburger navigation*/
@@ -403,37 +395,28 @@ body {
  /* Bootstrap 4: XS*/
 @media (max-width: 580px) {
 
-html,
-body {
-    font-size: 12px;
-}
+    html, body {
+        font-size: 12px;
+    }
 
-#cover-caption {
-    margin-top: 16rem;
-}
+    #cover-caption {
+        margin-top: 16rem;
+    }
 
-#nav-main {
-    display: block;
-    text-align: center;
-    font-family: 'Nunito-Regular';
-    background: transparent;
-    padding: 0;
-}
-
-.nav-icon {
-    font-size: 2.1rem;
-}
+    .nav-icon {
+        font-size: 2.1rem;
+    }
     
-#about img {
-    float: none;
-    margin: 0 auto;
-    display: block;
+    #about img {
+        float: none;
+        margin: 0 auto;
+        display: block;
     }
 
     #testimonials img {
-    float: none;
-    margin: 0 auto;
-    display: block;
+        float: none;
+        margin: 0 auto;
+        display: block;
     }
 
     .testimonial-message {
@@ -452,30 +435,4 @@ body {
         padding-left: 0;
     }
 
-     /*Hamburger navigation*/
-
-    #nav-main {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #222;
-        text-align: center;
-        transform: translateX(-100%);
-        transition: 0.6s ease;
-    }
-
-    #nav-main ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    #nav-main ul li {
-        padding: 10px 20px;
-        display: block;
-        float: none;
-        margin: 0px;
-    }
 }
