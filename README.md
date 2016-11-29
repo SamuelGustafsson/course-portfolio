@@ -12,6 +12,7 @@
 
 ####_Versionshanteringsprogram:_
 *	Git
+
 ####_Språk:_
 *HTML5
 *CSS3
@@ -19,10 +20,12 @@
 
 ####_Ramverk:_
 •	Bootstrap 4
+
 ####_Bibliotek:_
 •	jQuery 3.1.1
 •	Animate.css
 •	Waypoint.js
 •	Font Awesome
+
 ####_jQuery plugin:_
 •	FitText.js
