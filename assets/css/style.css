@@ -189,7 +189,6 @@ section {
 
 #testimonials-slider-nav .slider-nav-control {
     padding-left: 0.8rem;
-    
 }
 
 .testimonial-slider-item:hover {
@@ -197,11 +196,14 @@ section {
     transition: 5s;
 }
 
-.current {
+.current,
+.slider-nav-control:hover {
     color: rgb(19, 128, 36);
     font-size: 1.125rem;
     transition-timing-function: ease-in-out;
     transition: 0.4;
+}
+.slider-nav-control:visited {
 
 }
 
