@@ -18,9 +18,6 @@ Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup 
 
 ###_Teknologier_
 
-####_Versionshanteringsprogram:_
-*	Git
-
 ####_Språk:_
 * HTML5
 * CSS3
