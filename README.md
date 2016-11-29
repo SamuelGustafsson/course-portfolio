@@ -20,13 +20,13 @@ Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup 
 * Javascript
 
 ####_Ramverk:_
-•	Bootstrap 4
+*	Bootstrap 4
 
 ####_Bibliotek:_
-•	jQuery 3.1.1
-•	Animate.css
-•	Waypoint.js
-•	Font Awesome
+*	jQuery 3.1.1
+*	Animate.css
+*	Waypoint.js
+*	Font Awesome
 
 ####_jQuery plugin:_
 •	FitText.js
@@ -36,7 +36,7 @@ Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup 
 ####_Ladda ner projektet:_
 <pre>git clone https://github.com/SamuelGustafsson/course-portfolio.git</pre>
 
-####_Contact_
+####_Kontakt:_
 [Kontakta mig på LinkedIn](https://se.linkedin.com/in/samuel-gustafsson)
 
 [Github repository](https://github.com/SamuelGustafsson?tab=repositories)
