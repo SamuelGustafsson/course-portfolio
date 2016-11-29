@@ -6,6 +6,11 @@
 
 ####_Projekt:_ I kursen HTML, CSS, Javascript och webbstandarder har jag fått i uppgift att utforma en webbapplikation i språken HTML, CSS, Javascript, bibliotek jQuery och ramverket Bootstrap.
 
+####_Arbetsprocess:_ Ideén om att göra en portfolio hade jag redan innan vi fick projektet, när jag fick tillgång till kraven började jag med att lista dem på min whiteboard och brainstorma olika alternativa lösningar. Sen satt jag mig och googlade efter inpiration från andra webbutvecklares portolios. När jag hade en idé så målade jag en wireframe. Därefter skapade jag en statisk desktop webbapplikation efter min wireframe i HTML5,CSS3 och Bootstrap 4. När det var klart började jag med att göra applikationen dynamisk och eftersom mer och mer responsiv samtidigt som jag fixade buggar. Sist så validerade jag HTML och javascript koden och slutförde readme filen.
+
+#####_slutsats:_
+Jag önskar att jag hade gjort en riktig mockup i illustrator, men eftersom jag inte har någon erfarenhet av något bildredigeringsverktyg så valde jag att bara sätta igång med projektet eftersom jag förlorat nästan en vecka pågrund av mitt brutna finger. Jag önskar även att jag varit med konsekvent med utvecklingen, då jag själv upplever att den är lite rörig.   
+
 [Klicka på mig för att titta på Webbapplikationen](https://samuelgustafsson.github.io/course-portfolio/)
 
 ####_Ladda ner projektet:_
