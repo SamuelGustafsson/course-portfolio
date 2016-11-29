@@ -1,27 +1,28 @@
-#Ett skolprojekt i HTML, CSS, Javascipt, jQuery och Bootstrap.
+#_Ett skolprojekt i HTML, CSS, Javascipt, jQuery och Bootstrap._
 
-####Skola: Lernia
+####_Skola:_ Lernia
 
-####Utbildning: Javascriptutveckare, Frontend – Distans
+####_Utbildning:_ Javascriptutveckare, Frontend – Distans
 
-####Projekt: I kursen HTML, CSS, Javascript och webbstandarder har jag fått i uppgift att utforma en webbapplikation i språken HTML, CSS, Javascript, bibliotek jQuery och ramverket Bootstrap.
+####_Projekt:_ I kursen HTML, CSS, Javascript och webbstandarder har jag fått i uppgift att utforma en webbapplikation i språken HTML, CSS, Javascript, bibliotek jQuery och ramverket Bootstrap.
 
 ####Arbetsprocess: Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup med HTML5, CSS3 och Bootstrap 4 som jag sedan stylade. Efter det så började jag jobba mig neråt med responsiviten på applikationen och fixade eventuella buggar som jag stötte på under vägen.   
 
-###Teknologier
+###_Teknologier_
 
-###Versionshanteringsprogram:
-•	Git
-###Språk
-•	HTML5
-•	CSS3
-•	Javascript
-###Ramverk
+####_Versionshanteringsprogram:_
+*	Git
+####_Språk:_
+*HTML5
+*CSS3
+*Javascript
+
+####_Ramverk:_
 •	Bootstrap 4
-###Bibliotek
+####_Bibliotek:_
 •	jQuery 3.1.1
 •	Animate.css
 •	Waypoint.js
 •	Font Awesome
-###jQuery plugin
+####_jQuery plugin:_
 •	FitText.js
