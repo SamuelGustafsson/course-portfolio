@@ -9,7 +9,7 @@
 ####_Arbetsprocess:_ Ideén om att göra en portfolio hade jag redan innan vi fick projektet. När jag fick tillgång till kraven började jag med att lista dem på min whiteboard och brainstorma olika alternativa lösningar. Därefter googlade jag efter inpiration från andra webbutvecklares portolios. När jag hade fått en tydligare bild över hur mitt projekt skulle se ut målade jag upp en wireframe. Vidare skapade jag en statisk desktop webbapplikation i HTML5, CSS3 och Bootstrap 4. När det var klart började jag med att göra applikationen dynamisk. Sedan började jag göra applikationen responsiv samtidigt som jag åtgärdade buggar allt eftersom. Slutligen validerade jag HTML5- och javascriptkoden och slutförde readme filen.
 
 #####_slutsats:_
-Jag önskar att jag hade inlett med en mockup i illustrator, dock jag saknar erfarenhet i något bildredigeringsverktyg. Av denna anledning valde jag att sätta igång med projektet utan mockup pågrund av tidsbrist för brutet finger. Jag önskar även att jag varit mer konsekvent med utvecklingen då jag själv upplever att koden är något rörig.  
+Jag önskar att jag hade inlett projektet med en mockup i illustrator, dock jag saknar erfarenhet i något bildredigeringsverktyg. Av denna anledning valde jag att sätta igång med projektet utan mockup pågrund av tidsbrist för brutet finger. Jag önskar även att jag varit mer konsekvent med utvecklingen då jag själv upplever att koden är något rörig.  
 
 [Klicka på mig för att titta på Webbapplikationen](https://samuelgustafsson.github.io/course-portfolio/)
 
