@@ -6,7 +6,7 @@
 
 ####_Projekt:_ I kursen HTML, CSS, Javascript och webbstandarder har jag fått i uppgift att utforma en webbapplikation i språken HTML, CSS, Javascript, bibliotek jQuery och ramverket Bootstrap.
 
-[Titta på projektet](https://samuelgustafsson.github.io/course-portfolio/)
+[Klicka på mig för att titta på Webbapplikationen](https://samuelgustafsson.github.io/course-portfolio/)
 
 ####_Ladda ner projektet:_
 <pre>git clone https://github.com/SamuelGustafsson/course-portfolio.git</pre>
