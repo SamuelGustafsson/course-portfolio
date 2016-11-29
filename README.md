@@ -2,12 +2,12 @@
 
 ####_Skola:_ Lernia
 
-####_Utbildning:_ 
-Javascriptutveckare, Frontend – Distans
+####_Utbildning:_ Javascriptutveckare, Frontend – Distans
 
 ####_Projekt:_ I kursen HTML, CSS, Javascript och webbstandarder har jag fått i uppgift att utforma en webbapplikation i språken HTML, CSS, Javascript, bibliotek jQuery och ramverket Bootstrap.
 
-####Arbetsprocess: Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup med HTML5, CSS3 och Bootstrap 4 som jag sedan stylade. Efter det så började jag jobba mig neråt med responsiviten på applikationen och fixade eventuella buggar som jag stötte på under vägen.   
+####Arbetsprocess: 
+Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup med HTML5, CSS3 och Bootstrap 4 som jag sedan stylade. Efter det så började jag jobba mig neråt med responsiviten på applikationen och fixade eventuella buggar som jag stötte på under vägen.   
 
 ###_Teknologier_
 
@@ -38,5 +38,7 @@ Javascriptutveckare, Frontend – Distans
 
 ####_Contact_
 [Kontakta mig på LinkedIn](https://se.linkedin.com/in/samuel-gustafsson)
+
 [Github repository](https://github.com/SamuelGustafsson?tab=repositories)
+
 [Facebook](https://www.facebook.com/Samuel89?ref=br_rs)
