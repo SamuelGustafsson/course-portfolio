@@ -14,9 +14,9 @@
 *	Git
 
 ####_Språk:_
-*HTML5
-*CSS3
-*Javascript
+* HTML5
+* CSS3
+* Javascript
 
 ####_Ramverk:_
 •	Bootstrap 4
