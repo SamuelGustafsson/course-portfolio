@@ -1,9 +1,14 @@
 "use strict";
 var sliderTime = 5000;
 var SliderTimerControl = 0;
+
+      $(".nav-toggle").on("click", function () {
+            $("#nav-main").toggleClass("open");
+      });
 $(document).ready(function () {
 
-      $("#cover-caption h1").fitText(1, { minFontSize: '20px', maxFontSize: '55px' });
+
+
       $("#cover-caption h1").fitText(1, { minFontSize: '20px', maxFontSize: '55px' });
 
       //  Page navigation buttons
@@ -16,7 +21,7 @@ $(document).ready(function () {
 
                   window.location.hash = hash;
             });
-            // return false;
+            return false;
       });
 
       $('.js-wp-1').waypoint(function (direction) {
@@ -64,7 +69,7 @@ function renderTestimonials(testimonialsArray) {
             testimonialHTML += '</div>';
 
             // Create slider nav button
-            var sliderNavControl = '<a href="" class="current slider-nav-control" ><i class="fa fa-circle-o" aria-hidden="true"></i></a>';
+            var sliderNavControl = '<a href="" class="current slider-nav-control" onclick="showThisTestimonial()" data-index-number="' + testimonialNumber + '" ><i class="fa fa-circle-o" aria-hidden="true"></i></a>';
 
             // Render testimonial html string to index
             slider.insertAdjacentHTML('beforeend', testimonialHTML);
@@ -125,8 +130,6 @@ function playSlider() {
       resetSliderTimer();
 }
 
-
-
 // Change to next testimonial
 $(".testmionial-slider-left").on("click", function () {
       changeTestimonial("left");
@@ -139,6 +142,11 @@ $(".testmionial-slider-right").on("click", function () {
       changeTestimonial("right");
       return false;
 });
+
+function showThisTestimonial() {
+      alert($(this).data("data-index-number"));
+      return false;
+}
 
 renderTestimonials(testimonialsARR);
 playSlider();

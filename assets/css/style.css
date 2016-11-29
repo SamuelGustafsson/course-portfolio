@@ -70,6 +70,19 @@ section {
    transition: 0.9s;
 }
 
+/* Hamburger menu */
+
+.nav-toggle {
+    position: absolute;
+    top: 1.875rem;
+    left: 1.875rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.open {
+        transform: translateX(0)!important;
+}
+
 /* Cover section */
 #cover-section {
    background: url('../img/cover-background.jpg');
@@ -114,20 +127,21 @@ section {
    transition: 0.8s;
 }
 
-/* Features-section */
 
  /* About-section */
 
 #about img {
   float: right;
   width: 160px;
+  height: 160px;
   border-radius: 50%;
   background-size: cover;
   border: 2px solid black;
   box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
-/*Work Section*/
+/*Work-section*/
 #work img {
     width: 100%;
 }
@@ -175,6 +189,7 @@ section {
 
 #testimonials-slider-nav .slider-nav-control {
     padding-left: 0.8rem;
+    
 }
 
 .testimonial-slider-item:hover {
@@ -352,7 +367,36 @@ body {
     display: block;
     margin-bottom: 20px;
     }
+
+    /*Hamburger navigation*/
+
+    #nav-main {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        text-align: center;
+        transform: translateX(-100%);
+        transition: 0.6s ease;
+    }
+
+    #nav-main ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-main ul li {
+        padding: 10px 20px;
+        display: block;
+        float: none;
+        margin: 0px;
+    }
 }
+
+
 
  /* Bootstrap 4: XS*/
 @media (max-width: 580px) {
@@ -404,5 +448,32 @@ body {
 
     .arrow-right {
         padding-left: 0;
+    }
+
+     /*Hamburger navigation*/
+
+    #nav-main {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        text-align: center;
+        transform: translateX(-100%);
+        transition: 0.6s ease;
+    }
+
+    #nav-main ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-main ul li {
+        padding: 10px 20px;
+        display: block;
+        float: none;
+        margin: 0px;
     }
 }
