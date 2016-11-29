@@ -11,9 +11,6 @@
 ####_Ladda ner projektet:_
 <pre>git clone https://github.com/SamuelGustafsson/course-portfolio.git</pre>
 
-####Arbetsprocess: 
-Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup med HTML5, CSS3 och Bootstrap 4 som jag sedan stylade. Efter det så började jag jobba mig neråt med responsiviten på applikationen och fixade eventuella buggar som jag stötte på under vägen.   
-
 ---
 
 ###_Teknologier_
