@@ -199,7 +199,8 @@ section {
 }
 
 #testimonials-slider-nav .current,#testimonials-slider-nav .slider-nav-control:hover {
-    color: rgb(19, 128, 36);
+    color: deeppink;
+    /*color: rgb(19, 128, 36);*/
     font-size: 1.125rem;
     transition-timing-function: ease-in-out;
     transition: 0.4;
