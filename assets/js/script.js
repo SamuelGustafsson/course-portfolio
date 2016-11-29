@@ -5,7 +5,6 @@ var SliderTimerControl = 0;
 
 $(document).ready(function () {
 
-
       renderTestimonials(testimonialsARR);
       playSlider();
 
