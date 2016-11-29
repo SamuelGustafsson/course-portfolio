@@ -122,8 +122,6 @@ function resetSliderTimer() {
 }
 
 function changeTestimonial(buttonClicked, item) {
-
-                 
       if (buttonClicked === "this") {
             counter = item-1;
       }
