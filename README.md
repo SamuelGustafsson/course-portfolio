@@ -2,7 +2,8 @@
 
 ####_Skola:_ Lernia
 
-####_Utbildning:_ Javascriptutveckare, Frontend – Distans
+####_Utbildning:_ 
+Javascriptutveckare, Frontend – Distans
 
 ####_Projekt:_ I kursen HTML, CSS, Javascript och webbstandarder har jag fått i uppgift att utforma en webbapplikation i språken HTML, CSS, Javascript, bibliotek jQuery och ramverket Bootstrap.
 
@@ -29,3 +30,13 @@
 
 ####_jQuery plugin:_
 •	FitText.js
+
+[Titta på projektet](https://samuelgustafsson.github.io/course-portfolio/)
+
+####_Ladda ner projektet:_
+<pre>git clone https://github.com/SamuelGustafsson/course-portfolio.git</pre>
+
+####_Contact_
+[Kontakta mig på LinkedIn](https://se.linkedin.com/in/samuel-gustafsson)
+[Github repository](https://github.com/SamuelGustafsson?tab=repositories)
+[Facebook](https://www.facebook.com/Samuel89?ref=br_rs)
