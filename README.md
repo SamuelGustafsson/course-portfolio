@@ -40,9 +40,12 @@ Jag började med att göra en wireframe för datorvy. Sen skapade jag en mockup 
 
 ---
 
-####_Kontakt:_
-[Kontakta mig på LinkedIn](https://se.linkedin.com/in/samuel-gustafsson)
-
+####_Kolla mina andra projekt:_
 [Github repository](https://github.com/SamuelGustafsson?tab=repositories)
+
+---
+
+####_Kontakta mig på:_
+[LinkedIn](https://se.linkedin.com/in/samuel-gustafsson)
 
 [Facebook](https://www.facebook.com/Samuel89?ref=br_rs)
