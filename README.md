@@ -32,6 +32,10 @@
 ####_jQuery plugin:_
 •	FitText.js
 
+####_Implementation av teknologier_
+Jag har använt HTML5 och Bootstrap 4 för applikationensstruktur. CSS3 och Bootstrap 4 har tillämpats för att customisera utseendet. jQuery och javascript har jag använt för animationer och manipulera DOM men även för att göra webbapplikationen dynamisk. Fontawesome används för länkikoner och Waypoint.js används för att trigga händelser när applikationen skrollas till ett visst element. Animate.css används för att animera sectioner och FitText.js för att göra headern responsiv på ett enkelt sätt i cover sectionen.
+ 
+
 ---
 
 ####_Kolla mina andra projekt:_
