@@ -60,8 +60,6 @@ $(document).ready(function () {
       });
 });
 
-// Testimonial Slider
-
 // Testimonial object prototype
 function Testimonial(firstname, lastname, title, testimonial, pictureURL) {
       this.firstname = firstname;
