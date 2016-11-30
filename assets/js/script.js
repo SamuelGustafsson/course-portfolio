@@ -95,7 +95,7 @@ function renderTestimonials(testimonialsArray) {
             testimonialHTML += '<img src="' + testimonialsArray[i].pictureURL + '" alt="Picture of ' + testimonialsArray[i].fullname + '">';
             testimonialHTML += '</div>';
             testimonialHTML += '<div class="col-md-8 col-xs-12">';
-            testimonialHTML += '<p class="testimonial-message">' + testimonialsArray[i].testimonial + '</p>';
+            testimonialHTML += '<blockqoute class="testimonial-message">' + testimonialsArray[i].testimonial + '</blockqoute>';
             testimonialHTML += '</div>';
             testimonialHTML += '</div>';
 
