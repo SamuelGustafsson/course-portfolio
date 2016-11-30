@@ -2,7 +2,6 @@
 var sliderTime = 5000;
 var SliderTimerControl = 0;
 
-
 $(document).ready(function () {
 
       renderTestimonials(testimonialsARR);
@@ -112,7 +111,6 @@ var sliderNavButtons = sliderNavControlsContainer.getElementsByTagName("a");
 var sliderButtons = document.getElementsByClassName("testmionial-slider-button");
 var counter = 0;
 
-
 function resetSliderTimer() {
       clearTimeout(SliderTimerControl);
       SliderTimerControl = setTimeout(playSlider, sliderTime);
@@ -120,7 +118,7 @@ function resetSliderTimer() {
 
 function changeTestimonial(buttonClicked, item) {
       if (buttonClicked === "this") {
-            counter = item-1;
+            counter = item - 1;
       }
 
       else if (buttonClicked === "left") {
