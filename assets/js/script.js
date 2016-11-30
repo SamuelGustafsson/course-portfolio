@@ -58,26 +58,24 @@ $(document).ready(function () {
             changeTestimonial("this", thisTestimonial);
             return false;
       });
-
-
 });
 
 // Testimonial Slider
 
 // Testimonial object prototype
-function Testimonial(firstname, lastname, testimonial, pictureURL) {
+function Testimonial(firstname, lastname, title, testimonial, pictureURL) {
       this.firstname = firstname;
       this.lastname = lastname;
       this.fullname = firstname + ' ' + lastname;
+      this.title = title;
       this.testimonial = testimonial;
       this.pictureURL = pictureURL;
 }
 
-
 // Create new testimonials
-var olofTest = new Testimonial('Olof', 'Larsson', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/393268_302560479756766_1174175814_n.jpg?oh=d72b86716234548938641377804daac1&oe=58BDFACA");
-var niclasTest = new Testimonial('Niclas', 'Sjöstedt', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14095885_10155384602429852_7106269000411252661_n.jpg?oh=766a77567c1c716bd800eb3dd7a5b656&oe=58C5B208");
-var emelieTest = new Testimonial('Emelie', 'Jacobsson', "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14702283_10154032622206705_3344385999197099248_n.jpg?oh=9b634b246a43c550bf0e71e130cba24c&oe=58B38EE0");
+var olofTest = new Testimonial('Olof', 'Larsson', "Student, Javascriptutvecklare - Lernia", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/393268_302560479756766_1174175814_n.jpg?oh=d72b86716234548938641377804daac1&oe=58BDFACA");
+var niclasTest = new Testimonial('Niclas', 'Sjöstedt', "Projektledare, Elektro team , ", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14095885_10155384602429852_7106269000411252661_n.jpg?oh=766a77567c1c716bd800eb3dd7a5b656&oe=58C5B208");
+var emelieTest = new Testimonial('Emelie', 'Jacobsson', "Lärare, Ekhagen föreskola", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut assumenda velit quas impedit sequi illum iste eos voluptatibus provident, recusandae quia! In dolorum debitis accusamus suscipit voluptatem, sapiente id.", "https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/14702283_10154032622206705_3344385999197099248_n.jpg?oh=9b634b246a43c550bf0e71e130cba24c&oe=58B38EE0");
 
 // Creating array to hold testimonials
 var testimonialsARR = [];
@@ -95,6 +93,7 @@ function renderTestimonials(testimonialsArray) {
             testimonialHTML += '<img src="' + testimonialsArray[i].pictureURL + '" alt="Picture of ' + testimonialsArray[i].fullname + '">';
             testimonialHTML += '</div>';
             testimonialHTML += '<div class="col-md-8 col-xs-12">';
+            testimonialHTML += '<div class="Testimonial-name"><cite>— <strong>' + testimonialsARR[i].fullname + '</strong>, ' + testimonialsARR[i].title + '</cite></div>';
             testimonialHTML += '<blockqoute class="testimonial-message">' + testimonialsArray[i].testimonial + '</blockqoute>';
             testimonialHTML += '</div>';
             testimonialHTML += '</div>';
