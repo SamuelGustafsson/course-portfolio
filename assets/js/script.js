@@ -3,7 +3,6 @@ var sliderTime = 5000;
 var SliderTimerControl = 0;
 
 $(document).ready(function () {
-
       renderTestimonials(testimonialsARR);
       playSlider();
 
@@ -47,10 +46,69 @@ $(document).ready(function () {
 
       // Change to previous testimonial
       $(".testmionial-slider-right").on("click", function () {
-
             changeTestimonial("right");
             return false;
       });
+
+
+
+      // Contact message send
+      $("#contact-submit-btn").on("click", function () {
+            var formControls = $("#contact .form-control");
+            var checkFullname = $("#contact-fullname").val();
+            var checkEmail = $("#contact-email").val();
+            var checkMessage = $("#contact-message").val();
+            var element;
+
+            if (validate.isNumber(checkFullname) || !validate.isNotEmpty(checkFullname)) {
+                  element = $("#contact-fullname");
+                  invalidInput(element);
+            }
+            else {
+                  element = $("#contact-fullname");
+                  addSuccessToInput(element);
+            }
+
+            if (!validate.isEmailAddress(checkEmail)) {
+                  element = $("#contact-email");
+                  invalidInput(element);
+            }
+            else {
+                  element = $("#contact-email");
+                  addSuccessToInput(element);
+            }
+
+            if (!validate.isNotEmpty(checkMessage)) {
+                  element = $("#contact-message");
+                  invalidInput(element);
+            }
+            else {
+                  element = $("#contact-message");
+                  addSuccessToInput(element);
+            }
+
+            if (validate.isNotEmpty(checkMessage) &&
+                   validate.isEmailAddress(checkEmail) &&
+                  (!validate.isNumber(checkFullname) || !validate.isNotEmpty(checkFullname))) {
+
+                  $.alert({
+                        title: 'Info',
+                        content: 'Your message have been sent',
+                        theme: 'supervan',
+                        buttons: {
+                              OK: {
+                                    btnClass: 'btn-success'
+                              }
+                        }
+                  });
+
+                  $("#contact-fullname").val("");
+                  $("#contact-email").val("");
+                  $("#contact-message").val("");
+            }
+      });
+
+
 
       $(".slider-nav-control").on("click", function (e) {
             var thisTestimonial = $(this).attr("data-index-number");
@@ -58,6 +116,21 @@ $(document).ready(function () {
             return false;
       });
 });
+
+function invalidInput(element) {
+      element.parent().removeClass("has-success").addClass("has-danger");
+      element.next("div").removeClass("hide");
+}
+
+function addSuccessToInput(element) {
+      element.parent().addClass("has-success").removeClass("has-danger");
+      element.next("div").addClass("hide");
+}
+
+function playSlider() {
+      changeTestimonial("right");
+      resetSliderTimer();
+}
 
 // Testimonial object prototype
 function Testimonial(firstname, lastname, title, testimonial, pictureURL) {
@@ -154,9 +227,30 @@ function changeTestimonial(buttonClicked, item) {
       resetSliderTimer();
 }
 
-function playSlider() {
-      changeTestimonial("right");
-      resetSliderTimer();
+// function validateEmail() {
+//       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//       return re.test;
+// };
+
+var validate = {
+      isEmailAddress: function (str) {
+            var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            return pattern.test(str);  // returns a boolean
+      },
+      isNotEmpty: function (str) {
+            var pattern = /\S+/;
+            return pattern.test(str);  // returns a boolean
+      },
+      isNumber: function (str) {
+            var pattern = /^\d+$/;
+            return pattern.test(str);  // returns a boolean
+      }
+};
+
+function validateForm() {
+      if (validation.isNumber($("contact-fullname"))) {
+            console.log(validation.isNumber($("contact-fullname")));
+      }
 }
 
 

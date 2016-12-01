@@ -198,8 +198,40 @@ section {
     transition: 0.4;
 }
 
-/* Footer Section*/
+form,
+.jconfirm-box {
+   font-family: 'Nunito-Regular';
+}
 
+/* Contact-form */
+#contact-submit-btn {
+    margin-right: 0.9375rem;
+    float: right;
+}
+
+/* contact confirm box */
+.jconfirm .jconfirm-box {
+    float: none;
+    width: 100%;
+}
+
+/* jquery confirm adapt to bootstrap 4*/
+.jconfirm-box-container {
+    float: none;
+    width: 100%;
+}
+
+.jconfirm.jconfirm-supervan .jconfirm-box .jconfirm-buttons button {
+    background: #5CB85C;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+/* Footer Section*/
 footer {
     background-color: #222;
 }
@@ -370,8 +402,6 @@ h2 {
         margin: 0px;
     }
 }
-
-
 
  /* Bootstrap 4: XS*/
 @media (max-width: 580px) {
