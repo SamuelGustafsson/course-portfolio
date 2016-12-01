@@ -9,7 +9,7 @@
 ####_Arbetsprocess:_ Ideén om att göra en portfolio hade jag redan innan vi fick projektet. När jag fick tillgång till kraven började jag med att lista dem på min whiteboard och brainstorma olika alternativa lösningar. Därefter googlade jag efter inpiration från andra webbutvecklares portolios. När jag hade fått en tydligare bild över hur mitt projekt skulle se ut målade jag upp en wireframe. Vidare skapade jag en statisk desktop webbapplikation i HTML5, CSS3 och Bootstrap 4. När det var klart började jag med att göra applikationen dynamisk. Sedan började jag göra applikationen responsiv samtidigt som jag åtgärdade buggar allt eftersom. Slutligen validerade jag HTML5- och javascriptkoden och slutförde readme filen.
 
 #####_slutsats:_
-Jag önskar att jag hade inlett projektet med en mockup i illustrator, dock jag saknar erfarenhet i något bildredigeringsverktyg. Av denna anledning valde jag att sätta igång med projektet utan mockup och även pågrund av tidsbrist för brutet finger. Jag önskar även att jag varit mer konsekvent med utvecklingen då jag själv upplever att koden är något rörig.  
+Jag önskar att jag hade inlett projektet med en mockup i illustrator, dock jag saknar erfarenhet i något bildredigeringsverktyg. Av denna anledning valde jag att sätta igång med projektet utan mockup och även pågrund av tidsbrist för brutet finger. Jag önskar även att jag varit mer konsekvent med utvecklingen då jag själv upplever att koden är något rörig. Trots omstädigheterna så har det gått väldigt bra, jag har varit duktig!  
 
 [Klicka på mig för att titta på Webbapplikationen](https://samuelgustafsson.github.io/course-portfolio/)
 
@@ -31,14 +31,15 @@ Jag önskar att jag hade inlett projektet med en mockup i illustrator, dock jag 
 ####_Bibliotek:_
 *	jQuery 3.1.1
 *	Animate.css
-*	Waypoint.js
 *	Font Awesome
 
 ####_jQuery plugin:_
 •	FitText.js
+*	jQuery-Waypoint.js
+*	jQuery-confirm.js
 
 ####_Implementation av teknologier_
-Jag har använt HTML5 och Bootstrap 4 för applikationensstruktur. CSS3 och Bootstrap 4 har tillämpats för att customisera utseendet. jQuery och javascript har jag använt för animationer och manipulera DOM men även för att göra webbapplikationen dynamisk. Fontawesome används för länkikoner och Waypoint.js används för att trigga händelser när applikationen skrollas till ett visst element. Animate.css används för att animera sectioner och FitText.js för att göra headern responsiv på ett enkelt sätt i cover sectionen.
+Jag har använt HTML5 och Bootstrap 4 för applikationensstruktur. CSS3 och Bootstrap 4 har tillämpats för att customisera utseendet. jQuery och javascript har jag använt för animationer och manipulera DOM men även för att göra webbapplikationen dynamisk. Fontawesome används för länkikoner och Waypoint.js används för att trigga händelser när applikationen skrollas till ett visst element. Animate.css används för att animera sectioner och FitText.js för att göra headern responsiv på ett enkelt sätt i cover sectionen. Jquery confirm för att meddela att användarens meddelande har skickats.
  
 
 ---
