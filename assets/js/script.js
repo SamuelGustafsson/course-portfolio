@@ -3,11 +3,15 @@ var sliderTime = 5000;
 var SliderTimerControl = 0;
 
 $(document).ready(function () {
+      // Render testimonial object to DOM
       renderTestimonials(testimonialsARR);
+      // Start slider
       playSlider();
 
+      // Control varible for slider time
       SliderTimerControl = setTimeout(playSlider, sliderTime);
 
+      // Make cover header responsive
       $("#cover-caption h1").fitText(1, { minFontSize: '20px', maxFontSize: '55px' });
 
       //  Page navigation buttons
@@ -23,15 +27,12 @@ $(document).ready(function () {
             return false;
       });
 
+      // Trigger sections fall in animation when scrolled to about
       $('.js-wp-1').waypoint(function (direction) {
             $('.js-wp-1').addClass('animated fadeInDown');
       }, {
                   offset: '80%'
             });
-
-      $(".nav-toggle").on("click", function () {
-            $("#nav-main").toggleClass("open");
-      });
 
       // Change to next testimonial
       $(".testmionial-slider-left").on("click", function () {
@@ -39,9 +40,15 @@ $(document).ready(function () {
             return false;
       });
 
+      // Open hamburger menu
       $(".nav-link").on("click", function () {
             $("#nav-main").removeClass("open");
             return false;
+      });
+
+      // Close hamburger menu
+      $(".nav-toggle").on("click", function () {
+            $("#nav-main").toggleClass("open");
       });
 
       // Change to previous testimonial
@@ -50,11 +57,15 @@ $(document).ready(function () {
             return false;
       });
 
-
+      // Change to certain testimonial
+      $(".slider-nav-control").on("click", function (e) {
+            var thisTestimonial = $(this).attr("data-index-number");
+            changeTestimonial("this", thisTestimonial);
+            return false;
+      });
 
       // Contact message send
       $("#contact-submit-btn").on("click", function () {
-            var formControls = $("#contact .form-control");
             var checkFullname = $("#contact-fullname").val();
             var checkEmail = $("#contact-email").val();
             var checkMessage = $("#contact-message").val();
@@ -88,9 +99,10 @@ $(document).ready(function () {
             }
 
             if (validate.isNotEmpty(checkMessage) &&
-                   validate.isEmailAddress(checkEmail) &&
+                  validate.isEmailAddress(checkEmail) &&
                   (!validate.isNumber(checkFullname) || !validate.isNotEmpty(checkFullname))) {
 
+                  //Display message when contact message sent
                   $.alert({
                         title: 'Info',
                         content: 'Your message have been sent',
@@ -102,26 +114,21 @@ $(document).ready(function () {
                         }
                   });
 
+                  // Reset contact form
                   $("#contact-fullname").val("");
                   $("#contact-email").val("");
                   $("#contact-message").val("");
             }
       });
-
-
-
-      $(".slider-nav-control").on("click", function (e) {
-            var thisTestimonial = $(this).attr("data-index-number");
-            changeTestimonial("this", thisTestimonial);
-            return false;
-      });
 });
 
+// If invalid input in the contact-form make input red
 function invalidInput(element) {
       element.parent().removeClass("has-success").addClass("has-danger");
       element.next("div").removeClass("hide");
 }
 
+// If valid input in contact-form make input green
 function addSuccessToInput(element) {
       element.parent().addClass("has-success").removeClass("has-danger");
       element.next("div").addClass("hide");
@@ -227,11 +234,7 @@ function changeTestimonial(buttonClicked, item) {
       resetSliderTimer();
 }
 
-// function validateEmail() {
-//       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//       return re.test;
-// };
-
+// Validation object with validation methods
 var validate = {
       isEmailAddress: function (str) {
             var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -246,12 +249,6 @@ var validate = {
             return pattern.test(str);  // returns a boolean
       }
 };
-
-function validateForm() {
-      if (validation.isNumber($("contact-fullname"))) {
-            console.log(validation.isNumber($("contact-fullname")));
-      }
-}
 
 
 
