@@ -34,7 +34,7 @@ Jag önskar att jag hade inlett projektet med en mockup i illustrator, dock jag 
 *	Font Awesome
 
 ####_jQuery plugin:_
-•	FitText.js
+*	FitText.js
 *	jQuery-Waypoint.js
 *	jQuery-confirm.js
 
